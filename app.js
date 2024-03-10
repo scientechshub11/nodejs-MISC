@@ -15,7 +15,8 @@ app.use(bodyParser.json())
 
 app.get('/health-check', (req, res)=>{
     res.json({
-        success:"200"
+        success:"message for health check!!!!!!",
+        code:"200"
     })
 })
 // index.js
