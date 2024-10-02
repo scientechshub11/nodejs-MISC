@@ -21,6 +21,13 @@ app.get('/health-check', (req, res)=>{
 })
 // index.js
 
+app.get('/user', (req, res)=>{
+  res.json({
+      success:"message for health check!!!!!!",
+      code:"200"
+  })
+})
+
 // Dummy database for users
 const users = [
     { id: 1, username: 'user1', password: '$2a$10$1wbNTDY5dTyLzmouZLtzc.LypoC301qp5ek2kHbuxywHMNt2GdybC' }, // hashed password for 'password1'
